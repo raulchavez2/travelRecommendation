@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Pro</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #contactForm {
+            max-width: 40vw;
+            margin: 10vh auto;
+        }
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+        #contactForm button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #contactForm button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="logo.png" alt="Logo" id="logo"></img></li>
+            <li><h1>Travel Pro</h1></li>
+        </ul>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+        </ul>
+    </nav>
+    <div class="background">
+        <div id="main">
+            </br></br></br>
+            <h2 id="mainH2">Contact Us</h2>
+            </br></br>
+            <p id="mainSection">
+                Get in Touch!
+            </p>
+            </br></br></br>
+            <div id="socialMedia">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div id="main">
+            <form id="contactForm">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" onclick="thankyou()">Submit</button>
+              </form>
+              <script>
+                function thankyou(){
+                    alert('Thank you for contacting us!')
+                }
+              </script>
+        </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>

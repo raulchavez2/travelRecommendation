@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Pro</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="logo.png" alt="Logo" id="logo"></img></li>
+            <li><h1>Travel Pro</h1></li>
+        </ul>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+            <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
+            <li><button id='btnSearch'>Search</button></li>
+            <li><button id='btnReset'>Reset</button></li>
+        </ul>
+    </nav>
+    <div class="background">
+        <div id="main">
+            </br></br></br>
+            <h2 id="mainH2">Welcome to The Future of Travel</h2>
+            </br></br>
+            <p id="mainSection">
+                Embark on unforgettable journeys with us! Discover hidden gems, embrace new cultures, and create lasting memories. Your next adventure starts here—where wanderlust meets inspiration and exploration knows no bounds.
+            </p>
+            </br></br></br>
+            <div id="socialMedia">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div id="main">
+             <div id="result"></div>
+        </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
